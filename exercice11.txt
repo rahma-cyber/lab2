@@ -1,0 +1,31 @@
+3 protections :
+fail2ban
+
+Surveille /var/log/auth.log
+
+→ bloque IP après plusieurs échecs
+
+2FA
+
+Mot de passe seul insuffisant
+
+→ brute force inutile
+
+désactivation password auth
+
+Connexion uniquement par clé SSH
+
+→ plus de test par mot de passe possible
+
+effet du jitter
+
+Le jitter :
+
+ralentit les tentatives
+rend le comportement moins mécanique
+
+Mais :
+
+ne contourne pas 2FA
+ne contourne pas l’auth par clé
+fail2ban peut toujours détecter

@@ -1,0 +1,15 @@
+Queue.get() évite les doublons car chaque mot de passe est retiré une seule fois.
+
+Avec un découpage manuel :
+
+certains threads finissent vite
+d’autres restent chargés
+mauvaise répartition
+risque de conflits
+
+Avec Queue :
+
+distribution automatique
+meilleur équilibrage
+pas de race conditions
+pattern producteur/consommateur plus propre
